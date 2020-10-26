@@ -1,0 +1,25 @@
+,Sum.Sq,Mean.Sq,NumDF,DenDF,F.value,Pr..F.
+line,382959.1353,19147.95677,20,141.3492185,24.12948759,6.11E-36
+sex,75472.97398,75472.97398,1,26814.50834,95.10801655,1.96E-22
+line:sex,147485.5143,7374.275715,20,26802.82787,9.292766665,8.97E-29
+,,,,,,
+> summary(time.nodensitymodel.trial1),,,,,,
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest'],,,,,,
+Formula: time ~ line * sex + (1 | vial),,,,,,
+"   Data: get(paste0(""individual.trial"", i))",,,,,,
+,,,,,,
+REML criterion at convergence: 256232.4,,,,,,
+,,,,,,
+Scaled residuals: ,,,,,,
+    Min      1Q  Median      3Q     Max ,,,,,,
+-3.0012 -0.7399 -0.0809  0.5314  4.6836 ,,,,,,
+,,,,,,
+Random effects:,,,,,,
+ Groups   Name        Variance Std.Dev.,,,,,,
+ vial     (Intercept)  24.54    4.954  ,,,,,,
+ Residual             793.55   28.170  ,,,,,,
+"Number of obs: 26920, groups:  vial, 154",,,,,,
+,,,,,,
+                                                     npar    AIC    BIC  logLik deviance  Chisq Df Pr(>Chisq)    ,,,,,,
+"get(paste0(""time.nodensitymodel.norandom.trial"", i))   43 256950 257302 -128432   256864                         ",,,,,,
+"get(paste0(""time.nodensitymodel.trial"", i))            44 256448 256809 -128180   256360 503.26  1  < 2.2e-16 ***",,,,,,

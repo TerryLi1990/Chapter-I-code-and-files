@@ -1,0 +1,27 @@
+,Sum.Sq,Mean.Sq,NumDF,DenDF,F.value,Pr..F.
+line,13072.56072,2614.512143,5,41.66596389,5.314459502,0.000725147
+sex,48964.48659,48964.48659,1,6225.347434,99.52900074,2.89E-23
+line:sex,2072.734734,414.5469467,5,6224.373894,0.842640171,0.519203808
+,,,,,,
+REML criterion at convergence: 56742.7,,,,,,
+,,,,,,
+Scaled residuals: ,,,,,,
+    Min      1Q  Median      3Q     Max ,,,,,,
+-2.4905 -0.6302 -0.1672  0.5663  3.9568 ,,,,,,
+,,,,,,
+Random effects:,,,,,,
+ Groups   Name        Variance Std.Dev.,,,,,,
+ vial     (Intercept)  74.94    8.657  ,,,,,,
+ Residual             491.96   22.180  ,,,,,,
+"Number of obs: 6270, groups:  vial, 48",,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+                                                     npar   AIC   BIC logLik deviance  Chisq Df Pr(>Chisq)    ,,,,,,
+"get(paste0(""time.nodensitymodel.norandom.trial"", i))   13 57360 57448 -28667    57334                         ",,,,,,
+"get(paste0(""time.nodensitymodel.trial"", i))            14 56811 56905 -28391    56783 551.59  1  < 2.2e-16 ***",,,,,,
