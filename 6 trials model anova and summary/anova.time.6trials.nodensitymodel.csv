@@ -1,0 +1,37 @@
+,Sum.Sq,Mean.Sq,NumDF,DenDF,F.value,Pr..F.
+trial,3016810.893,603362.1786,5,629.7191717,1250.93711,4.94065645841247e-324
+line,312055.0817,15602.75409,20,578.4584875,32.3488359,7.58E-81
+sex,87903.09279,87903.09279,1,68658.89566,182.2474871,1.77E-41
+trial:line,199692.8488,3273.653259,61,561.9000001,6.787190997,8.80E-38
+trial:sex,7063.860247,1412.772049,5,68865.17313,2.929068223,0.011996356
+line:sex,81894.58333,4094.729167,20,70728.4177,8.48950904,1.03E-25
+trial:line:sex,80917.22384,1326.511866,61,70581.1295,2.750226944,6.89E-12
+,,,,,,
+"> anova(time.6trials.nodensitymodel,time.6trials.nodensitymodel.norandom)",,,,,,
+refitting model(s) with ML (instead of REML),,,,,,
+Data: individual.6trials,,,,,,
+Models:,,,,,,
+time.6trials.nodensitymodel.norandom: time ~ trial * line * sex,,,,,,
+time.6trials.nodensitymodel: time ~ trial * line * sex + (1 | vial),,,,,,
+                                     npar    AIC    BIC  logLik deviance  Chisq Df Pr(>Chisq)    ,,,,,,
+time.6trials.nodensitymodel.norandom  175 646499 648105 -323075   646149                         ,,,,,,
+time.6trials.nodensitymodel           176 643895 645510 -321772   643543 2605.7  1  < 2.2e-16 ***,,,,,,
+---,,,,,,
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1,,,,,,
+,,,,,,
+> summary(time.6trials.nodensitymodel),,,,,,
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest'],,,,,,
+Formula: time ~ trial * line * sex + (1 | vial),,,,,,
+   Data: individual.6trials,,,,,,
+,,,,,,
+REML criterion at convergence: 642982.4,,,,,,
+,,,,,,
+Scaled residuals: ,,,,,,
+    Min      1Q  Median      3Q     Max ,,,,,,
+-3.9236 -0.6037 -0.0994  0.4577  6.0545 ,,,,,,
+,,,,,,
+Random effects:,,,,,,
+ Groups   Name        Variance Std.Dev.,,,,,,
+ vial     (Intercept)  30.96    5.564  ,,,,,,
+ Residual             482.33   21.962  ,,,,,,
+"Number of obs: 71259, groups:  vial, 627",,,,,,

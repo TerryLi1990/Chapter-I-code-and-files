@@ -1,0 +1,44 @@
+,Sum.Sq,Mean.Sq,NumDF,DenDF,F.value,Pr..F.
+trial,344797.7268,68959.54537,5,577.7499186,142.970732,1.44E-98
+line,29399.99209,1469.999605,20,502.8276569,3.047684238,1.19E-05
+sex,4803.186665,4803.186665,1,70582.77566,9.958231447,0.001601991
+density,1341.612868,1341.612868,1,1557.742159,2.781505775,0.095559465
+trial:line,37577.77112,616.0290347,61,536.78066,1.277185363,0.085119667
+trial:sex,3644.106184,728.8212368,5,70429.98711,1.511032376,0.182531112
+line:sex,14540.99049,727.0495244,20,70800.33055,1.507359164,0.067544292
+trial:density,6373.367276,1274.673455,5,776.3633324,2.642723294,0.022211114
+line:density,5916.862921,295.8431461,20,582.3154081,0.613358324,0.904381272
+sex:density,341.5613808,341.5613808,1,57599.53725,0.708143889,0.400064179
+trial:line:sex,34249.70297,561.4705404,61,70733.94486,1.164071685,0.178799671
+trial:line:density,31495.69383,516.3228497,61,514.5523972,1.070469003,0.341415367
+trial:sex:density,2147.112681,429.4225361,5,65037.74628,0.890302481,0.486403706
+line:sex:density,9910.14083,495.5070415,20,69570.31929,1.027312521,0.424281163
+trial:line:sex:density,25195.16055,413.0354188,61,69996.39048,0.856327806,0.780411989
+,,,,,,
+"> anova(time.6trials.densitymodel,time.6trials.densitymodel.norandom)",,,,,,
+refitting model(s) with ML (instead of REML),,,,,,
+Data: individual.6trials,,,,,,
+Models:,,,,,,
+time.6trials.densitymodel.norandom: time ~ trial * line * sex * density,,,,,,
+time.6trials.densitymodel: time ~ trial * line * sex * density + (1 | vial),,,,,,
+                                   npar    AIC    BIC  logLik deviance  Chisq Df Pr(>Chisq)    ,,,,,,
+time.6trials.densitymodel.norandom  349 645603 648805 -322452   644905                         ,,,,,,
+time.6trials.densitymodel           350 643952 647163 -321626   643252 1652.7  1  < 2.2e-16 ***,,,,,,
+---,,,,,,
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1,,,,,,
+,,,,,,
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest'],,,,,,
+Formula: time ~ trial * line * sex * density + (1 | vial),,,,,,
+   Data: individual.6trials,,,,,,
+,,,,,,
+REML criterion at convergence: 643339.5,,,,,,
+,,,,,,
+Scaled residuals: ,,,,,,
+    Min      1Q  Median      3Q     Max ,,,,,,
+-3.8316 -0.6111 -0.1061  0.4643  6.0388 ,,,,,,
+,,,,,,
+Random effects:,,,,,,
+ Groups   Name        Variance Std.Dev.,,,,,,
+ vial     (Intercept)  25.6     5.06   ,,,,,,
+ Residual             482.3    21.96   ,,,,,,
+"Number of obs: 71259, groups:  vial, 627",,,,,,
